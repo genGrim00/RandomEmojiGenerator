@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Josefin+Sans&family=Roboto+Mono&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgreen;
+    height: 100vh;
+}
+
+.container{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.container> h1{
+    color: white;
+}
+.interactive{
+    text-align: center;
+}
+
+
+button{
+    font-size: 4vw;
+    padding: 1vw;
+    margin: 1vw 0;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, .5);
+    filter: grayscale();
+    transition: filter .2s ease-in-out;
+    cursor: pointer;
+}
+
+button:hover{
+    filter: grayscale(0);
+}
